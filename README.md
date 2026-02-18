@@ -1,7 +1,6 @@
-# Modular Document Understanding (ADE)
+# Multi Modal Document Understanding (MMDU)
 
-This module refactors the original `ade` repository into a modular architecture, allowing for easy swapping of OCR, Layout, and Vision-Language Models (VLMs) while ensuring everything runs locally.
-
+he goal is to extract and understand information from documents containing a mix of images, text, and tables, associating them contextually. This approach moves beyond traditional OCR and basic LLM processing by leveraging specialized agents and models for each modality, orchestrated to achieve a holistic understanding of the document's content and structure.
 ## Architecture Overview
 
 The system is built on three core abstractions defined in `modules.py`:
@@ -51,9 +50,4 @@ To add a new model (e.g., a new OCR engine):
 | **Layout** | `layoutlmv3` | Local LayoutLMv3-based Reading Order model |
 | **VLM** | `huggingface` | Placeholder for local HF-based VLMs |
 
-## Benefits of Modularity
 
--   **Flexibility**: Easily test different OCR engines (e.g., Tesseract vs. PaddleOCR) or Layout models.
--   **Local Execution**: All providers are designed to run on local hardware (CPU/GPU).
--   **Extensibility**: Add support for proprietary APIs (like OpenAI or Anthropic) by simply adding a new provider.
--   **Clean Code**: Decouples the model logic from the application logic.
