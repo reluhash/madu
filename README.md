@@ -1,6 +1,6 @@
 # Multi Modal Document Understanding (MMDU)
 
-he goal is to extract and understand information from documents containing a mix of images, text, and tables, associating them contextually. This approach moves beyond traditional OCR and basic LLM processing by leveraging specialized agents and models for each modality, orchestrated to achieve a holistic understanding of the document's content and structure.
+The goal is to extract and understand information from documents containing a mix of images, text, and tables, associating them contextually. This approach moves beyond traditional OCR and basic LLM processing by leveraging specialized agents and models for each modality, orchestrated to achieve a holistic understanding of the document's content and structure.
 ## Architecture Overview
 
 The system is built on three core abstractions defined in `modules.py`:
